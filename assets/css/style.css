@@ -1,0 +1,113 @@
+* {
+    font-family: "open sans";
+    margin: 0px;
+    padding: 0px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas:
+        "header header"
+        "menuizquierdo contenidoprincipal"
+        "footer footer";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(255, 145, 0);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.menuizquierdo {
+    grid-area: menuizquierdo;
+    background-color: rgb(232, 203, 54);
+    padding: 15px;
+
+}
+h1 {
+    color: #777474;
+}
+.lista {
+    color: #777575;
+}
+.numero {
+    color: #929191;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenidoprincipal {
+    grid-area: contenidoprincipal;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(107, 91, 8);
+    padding: 15px;
+
+    gap: 10px;
+
+
+
+}
+
+.contenidoprincipal img {
+    width: auto;
+    height: 200px;
+    padding: 10px;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(255, 145, 0);
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px black;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    overflow: hidden;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+.card button:hover {
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 8);
+    transform: translateY(-5%);
+
+}
+.card h1 {
+    color:rgb(232, 203, 54);
+}
+.card p {
+    font-size: 25px;
+}
